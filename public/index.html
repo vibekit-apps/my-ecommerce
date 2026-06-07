@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Store</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="/">◆ Store</a>
+  <nav class="categories">
+    <button class="cat active" data-cat="">All</button>
+    <button class="cat" data-cat="electronics">Electronics</button>
+    <button class="cat" data-cat="apparel">Apparel</button>
+    <button class="cat" data-cat="home">Home</button>
+    <button class="cat" data-cat="accessories">Accessories</button>
+  </nav>
+  <a class="cart-btn" href="/cart.html">
+    Cart <span id="cart-count" class="cart-count">0</span>
+  </a>
+</header>
+
+<section class="hero">
+  <h1>Built well. Priced honestly.</h1>
+  <p>Our small catalog of things we'd actually buy.</p>
+</section>
+
+<main>
+  <div id="product-grid" class="product-grid"></div>
+</main>
+
+<footer>
+  <span>Store starter — your scaffold to fork.</span>
+</footer>
+
+<script src="/app.js"></script>
+<script>store.bindHome();</script>
+</body>
+</html>
